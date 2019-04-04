@@ -631,6 +631,21 @@
     </section>
     <!--/ Title + sub-title + buttons full width section with theme color(.tbg) -->
 
+    <style>
+        .element-scheme--light a {
+            color: #000;
+        }
+
+        .latest_posts-acc-viewall {
+            position: absolute;
+            top: 12px;
+            right: 0;
+            font-size: 10px;
+            font-weight: 700;
+            color: #757575;
+            z-index: 1;
+        }
+    </style>
 
     <!-- Latest posts section with custom paddings -->
     <section class="hg_section pt-80 pb-0">
@@ -643,6 +658,9 @@
                         <h3 class="m_title kl-font-alt">
                             LATEST STORIES
                         </h3>
+
+                        <a href="carousel-portfolio"
+                            class="viewall element-scheme__linkhv latest_posts-acc-viewall">VIEW ALL -</a>
                         <!--/ Title -->
 
                         <div class="row">
@@ -802,7 +820,7 @@
                                 <div class="recentwork_carousel__left mb-md-50">
                                     <!-- Title -->
                                     <h3 class="recentwork_carousel__title m_title">
-                                        RECENT WORK
+                                        DỰ ÁN TIÊU BIỂU
                                     </h3>
                                     <!--/ Title -->
 
@@ -1227,7 +1245,7 @@
                             <div class="testimonials_fader">
                                 <!-- Title -->
                                 <h3 class="m_title">
-                                    REVIEWS
+                                    KHÁCH HÀNG NÓI GÌ VỀ CHÚNG TÔI?
                                 </h3>
                                 <!--/ Title -->
 
@@ -1329,6 +1347,603 @@
     <!--/ Recent work and testimonials fader setion with background lightgray color and custom paddings -->
 
 
+    <style>
+        @media only screen and (min-width: 1200px) {
+            .psl--height .psl__inner {
+                position: absolute;
+                width: 100%;
+                bottom: 0;
+            }
+        }
+
+        .kl-bg-source+.psl__inner {
+            position: relative;
+        }
+
+        .psl__main-title {
+            font-size: 42px;
+            color: #fff;
+            font-weight: 300;
+            letter-spacing: -1px;
+            line-height: 1.1;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .psl__main-desc {
+            font-size: 22px;
+            color: #fff;
+            font-weight: 300;
+            line-height: 1.4;
+            text-align: center;
+        }
+    </style>
+
+
+    <!-- Slideshow Portfolio Slider + Bottom Mask style 5 + Scroll Me effect -->
+    <div class="kl-slideshow portfolio-slider__sideshow gradient hg_def_header_style maskcontainer--mask5 scrollme"
+        style="overflow: hidden;">
+
+        <!-- Portfolio frames slider wrapper with custom px height(.h-760) -->
+        <div
+            class="kl-slideshow-inner portfolio-slider-frames psl__wrapper psl--horizontal psl--left psl--height h-760">
+            <!-- Background -->
+            <div class="kl-bg-source">
+                <!-- Background image -->
+                <div class="kl-bg-source__bgimage"
+                    style="background-image:url(assets/images/bg-sliding-frames.jpg); background-repeat:no-repeat; background-attachment:scroll; background-position-x:center; background-position-y:top; background-size:cover">
+                </div>
+                <!--/ Background image -->
+            </div>
+            <!--/ Background -->
+
+            <!-- Portfolio frames slider wrapper -->
+            <div class="psl__inner">
+                <!-- Portfolio frames slider container -->
+                <div class="container">
+                    <!-- Main Title -->
+                    <h3 class="psl__main-title">
+                        Our <span class="fw-normal">Amazing Template</span> so far
+                    </h3>
+
+                    <!-- Main description -->
+                    <h4 class="psl__main-desc">
+                        Packed with all the goodies you can get, Kallyas is our flagship template, one of the
+                        bestselling item ever on ThemeForest and one amazing piece of work that has been
+                        released so far.
+                    </h4>
+
+                    <h4 class="psl__main-desc">
+                        Packed with all the goodies you can get, Kallyas is our flagship template, one of the
+                        bestselling item ever on ThemeForest and one amazing piece of work that has been
+                        released so far.
+                    </h4>
+
+                    <h4 class="psl__main-desc">
+                        Packed with all the goodies you can get, Kallyas is our flagship template, one of the
+                        bestselling item ever on ThemeForest and one amazing piece of work that has been
+                        released so far.
+                    </h4>
+                </div>
+                <!--/ container -->
+
+            </div>
+            <!--/ .psl__inner -->
+        </div>
+        <!--/ .psl__wrapper -->
+
+        <!-- Bottom mask style 5 -->
+        <div class="kl-bottommask kl-bottommask--mask5">
+            <svg width="2700px" height="64px" class="svgmask" viewbox="0 0 2700 64" version="1.1"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs>
+                    <filter x="-50%" y="-50%" width="200%" height="200%" filterunits="objectBoundingBox"
+                        id="filter-mask5">
+                        <feoffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetInner1"></feoffset>
+                        <fegaussianblur stddeviation="1.5" in="shadowOffsetInner1" result="shadowBlurInner1">
+                        </fegaussianblur>
+                        <fecomposite in="shadowBlurInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1"
+                            result="shadowInnerInner1"></fecomposite>
+                        <fecolormatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.45 0" in="shadowInnerInner1"
+                            type="matrix" result="shadowMatrixInner1"></fecolormatrix>
+                        <femerge>
+                            <femergenode in="SourceGraphic"></femergenode>
+                            <femergenode in="shadowMatrixInner1"></femergenode>
+                        </femerge>
+                    </filter>
+                </defs>
+                <path
+                    d="M1892,0 L2119,44.993 L2701,45 L2701.133,63.993 L-0.16,63.993 L1.73847048e-12,45 L909,44.993 L1892,0 Z"
+                    class="bmask-bgfill" fill="#fbfbfb" filter="url(#filter-mask5)"></path>
+                <path d="M2216,44.993 L2093,55 L1882,6 L995,62 L966,42 L1892,0 L2118,44.993 L2216,44.993 L2216,44.993 Z"
+                    fill="#cd2122" class="bmask-customfill" filter="url(#filter-mask5)"></path>
+            </svg>
+        </div>
+        <!--/ Bottom mask style 5 -->
+    </div>
+    <!--/ Slideshow Portfolio Slider + Bottom Mask style 5 + Scroll Me effect -->
+
+
+
+    <!-- Latest Posts - Accordion Style with custom bottom padding -->
+    <section class="hg_section pb-70">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12">
+                    <!-- Latest posts accordion style -->
+                    <div class="latest_posts-acc">
+                        <!-- Title -->
+                        <h3 class="m_title latest_posts-acc-elm-title">OUR LATEST STORIES</h3>
+                        <!--/ Title -->
+
+                        <!-- View all posts button -->
+                        <a href="#" class="latest_posts-acc-viewall">VIEW ALL -</a>
+                        <!--/ View all posts button -->
+
+                        <!-- CSS3 Accordion -->
+                        <div class="css3accordion latest_posts-acc-wrapper">
+                            <ul class="latest_posts-acc-list">
+                                <!-- Post -->
+                                <li class="latest_posts-acc-item">
+                                    <!-- Post wrapper -->
+                                    <div class="inner-acc latest_posts-acc-inner" style="width: 555px;">
+                                        <!-- Post link wrapper -->
+                                        <a href="blog-post.html" class="thumb hoverBorder plus latest_posts-acc-link">
+                                            <!-- Border wrapper -->
+                                            <span class="hoverBorderWrapper">
+                                                <!-- Image -->
+                                                <img src="https://demo.kallyas.net/wp-content/uploads/2015/08/blog1-370x200_c.jpg"
+                                                    class="latest_posts-acc-img" alt="" title="" />
+                                                <!--/ Image -->
+
+                                                <!-- Hover border/shadow -->
+                                                <span class="theHoverBorder"></span>
+                                                <!--/ Hover border/shadow -->
+                                            </span>
+                                            <!--/ Border wrapper -->
+                                        </a>
+                                        <!-- Post link wrapper -->
+
+                                        <!-- Post content -->
+                                        <div class="content latest_posts-acc-content">
+                                            <!-- Details & tags -->
+                                            <em class="latest_posts-acc-details">
+                                                02 January 2018 by danut, in Mobile
+                                            </em>
+                                            <!--/ Details & tags -->
+
+                                            <!-- Title with link -->
+                                            <h5 class="m_title latest_posts-acc-title">
+                                                <a href="blog-html.php">
+                                                    10 Templates To Build e-Market
+                                                </a>
+                                            </h5>
+                                            <!--/ Title with link -->
+
+                                            <!-- Content text -->
+                                            <div class="text latest_posts-acc-text">
+                                                The Internet is a different sales medium with some direct sales and
+                                                some...
+                                            </div>
+                                            <!--/ Content text -->
+
+                                            <!-- Read more button -->
+                                            <a href="blog-post.html" class="latest_posts-acc-more">
+                                                READ MORE +
+                                            </a>
+                                            <!--/ Read more button -->
+                                        </div>
+                                        <!--/ Post content -->
+                                    </div>
+                                    <!--/ Post wrapper -->
+                                </li>
+                                <!--/ Post -->
+
+                                <!-- Post -->
+                                <li class="latest_posts-acc-item">
+                                    <!-- Post wrapper -->
+                                    <div class="inner-acc latest_posts-acc-inner" style="width: 555px">
+                                        <!-- Post link wrapper -->
+                                        <a href="blog-post.html" class="thumb hoverBorder plus latest_posts-acc-link">
+                                            <!-- Border wrapper -->
+                                            <span class="hoverBorderWrapper">
+                                                <!-- Image -->
+                                                <img src="https://demo.kallyas.net/wp-content/uploads/2015/08/blog1-370x200_c.jpg"
+                                                    class="latest_posts-acc-img" alt="" title="" />
+                                                <!--/ Image -->
+
+                                                <!-- Hover border/shadow -->
+                                                <span class="theHoverBorder"></span>
+                                                <!--/ Hover border/shadow -->
+                                            </span>
+                                            <!--/ Border wrapper -->
+                                        </a>
+                                        <!-- Post link wrapper -->
+
+                                        <!-- Post content -->
+                                        <div class="content latest_posts-acc-content">
+                                            <!-- Details & tags -->
+                                            <em class="latest_posts-acc-details">
+                                                01 January 2018 by Laur in CSS
+                                            </em>
+                                            <!--/ Details & tags -->
+
+                                            <!-- Title with link -->
+                                            <h5 class="m_title latest_posts-acc-title">
+                                                <a href="blog-post.html">
+                                                    Top 30 Amazing Code Snippets
+                                                </a>
+                                            </h5>
+                                            <!--/ Title with link -->
+
+                                            <!-- Content text -->
+                                            <div class="text latest_posts-acc-text">
+                                                A collection of code snippets for web developers, including code for
+                                                HTML, CSS, JavaScript, PHP, WordPress...
+                                            </div>
+                                            <!--/ Content text -->
+
+                                            <!-- Read more button -->
+                                            <a href="blog-post.html" class="latest_posts-acc-more" title="">
+                                                READ MORE +
+                                            </a>
+                                            <!--/ Read more button -->
+                                        </div>
+                                        <!--/ Post content -->
+                                    </div>
+                                    <!--/ Post wrapper -->
+                                </li>
+                                <!--/ Post -->
+
+                                <!-- Post -->
+                                <li class="last latest_posts-acc-item">
+                                    <!-- Post wrapper -->
+                                    <div class="inner-acc latest_posts-acc-inner" style="width: 555px">
+                                        <!-- Post link wrapper -->
+                                        <a href="blog-post.html" class="thumb hoverBorder plus latest_posts-acc-link">
+                                            <!-- Border wrapper -->
+                                            <span class="hoverBorderWrapper">
+                                                <!-- Image -->
+                                                <img class="images/blog1-370x200.jpg"
+                                                    src="https://demo.kallyas.net/wp-content/uploads/2015/08/blog1-370x200_c.jpg"
+                                                    alt="" title="" />
+                                                <!--/ Image -->
+
+                                                <!-- Hover border/shadow -->
+                                                <span class="theHoverBorder"></span>
+                                                <!--/ Hover border/shadow -->
+                                            </span>
+                                            <!--/ Border wrapper -->
+                                        </a>
+                                        <!-- Post link wrapper -->
+
+                                        <!-- Post content -->
+                                        <div class="content latest_posts-acc-content">
+                                            <!-- Details & tags -->
+                                            <em class="latest_posts-acc-details">
+                                                01 January 2018 by Marius in Design
+                                            </em>
+                                            <!--/ Details & tags -->
+
+                                            <!-- Title with link -->
+                                            <h5 class="m_title latest_posts-acc-title">
+                                                <a href="blog-post.html">
+                                                    How to build a website with Kallyas
+                                                </a>
+                                            </h5>
+                                            <!--/ Title with link -->
+
+                                            <!-- Content text -->
+                                            <div class="text latest_posts-acc-text">
+                                                An easy step-by-step website setup guide written by web
+                                                developers...
+                                            </div>
+                                            <!--/ Content text -->
+
+                                            <!-- Read more button -->
+                                            <a href="blog-post.html" class="latest_posts-acc-more">
+                                                READ MORE +
+                                            </a>
+                                            <!--/ Read more button -->
+                                        </div>
+                                        <!--/ Post content -->
+                                    </div>
+                                    <!--/ Post wrapper -->
+                                </li>
+                                <!--/ Post -->
+                            </ul>
+                        </div>
+                        <!--/ CSS3 Accordion -->
+                    </div>
+                    <!--/ Latest posts accordion style -->
+                </div>
+                <!--/ col-sm-12 col-md-12 -->
+            </div>
+            <!--/ row -->
+        </div>
+        <!--/ container -->
+    </section>
+    <!--/ Latest Posts - Accordion Style with custom bottom padding -->
+
+
+
+    <section class="hg_section pt-5 pb-5" style="background-color: #6b6b6b;">
+        <div class="container">
+            <!-- Partners element -->
+            <div class="ts-pt-partners ts-pt-partners--y-title clearfix">
+                <!-- Title -->
+                <div class="ts-pt-partners__title">
+                    TECHNOLOGIES
+                </div>
+                <!--/ Title -->
+
+                <!-- Partners carousel wrapper -->
+                <div class="ts-pt-partners__carousel-wrapper">
+                    <div class="ts-pt-partners__carousel js-slick" data-slick='{
+        										"infinite": true,
+        										"autoplay": true,
+        										"autoplaySpeed": 3000,
+        										"arrows": false,
+        										"dots": false,
+        										"slidesToShow": 5,
+        										"slidesToScroll": 1,
+        										"waitForAnimate": false,
+        										"speed": 0,
+        										"swipe": false,
+        										"respondTo": "slider",
+        										"responsive": [
+        											{
+        												"breakpoint": 1024,
+        												"settings": {
+        													"slidesToShow": 4,
+        													"slidesToScroll": 4
+        												}
+        											},
+        											{
+        												"breakpoint": 767,
+        												"settings": {
+        													"slidesToShow": 3,
+        													"slidesToScroll": 3
+        												}
+        											},
+        											{
+        												"breakpoint": 520,
+        												"settings": {
+        													"slidesToShow": 2,
+        													"slidesToScroll": 2
+        												}
+        											},
+        											{
+        												"breakpoint": 380,
+        												"settings": {
+        													"slidesToShow": 1,
+        													"slidesToScroll": 1
+        												}
+        											}
+        										]
+        
+        										}'>
+
+                        <!-- Item #1 -->
+                        <div class="ts-pt-partners__carousel-item">
+                            <!-- Partner image link -->
+                            <a class="ts-pt-partners__link" href="#" target="_self" title="">
+                                <!-- Image -->
+                                <img class="ts-pt-partners__img img-fluid"
+                                    src="https://demo.kallyas.net/wp-content/uploads/2015/08/logo6.svg" alt=""
+                                    title="" />
+                                <!--/ Image -->
+                            </a>
+                            <!--/ Partner image link -->
+                        </div>
+                        <!--/ Item #1 -->
+
+                        <!-- Item #2 -->
+                        <div class="ts-pt-partners__carousel-item">
+                            <!-- Partner image link -->
+                            <a class="ts-pt-partners__link" href="#" target="_self" title="">
+                                <!-- Image -->
+                                <img class="ts-pt-partners__img img-fluid"
+                                    src="https://demo.kallyas.net/wp-content/uploads/2015/08/logo7.svg" alt=""
+                                    title="" />
+                                <!--/ Image -->
+                            </a>
+                            <!--/ Partner image link -->
+                        </div>
+                        <!--/ Item #2 -->
+
+                        <!-- Item #3 -->
+                        <div class="ts-pt-partners__carousel-item">
+                            <!-- Partner image link -->
+                            <a class="ts-pt-partners__link" href="#" target="_self" title="">
+                                <!-- Image -->
+                                <img class="ts-pt-partners__img img-fluid"
+                                    src="https://demo.kallyas.net/wp-content/uploads/2015/08/logo8.svg" alt=""
+                                    title="" />
+                                <!--/ Image -->
+                            </a>
+                            <!--/ Partner image link -->
+                        </div>
+                        <!--/ Item #3 -->
+
+                        <!-- Item #4 -->
+                        <div class="ts-pt-partners__carousel-item">
+                            <!-- Partner image link -->
+                            <a class="ts-pt-partners__link" href="#" target="_self" title="">
+                                <!-- Image -->
+                                <img class="ts-pt-partners__img img-fluid"
+                                    src="https://demo.kallyas.net/wp-content/uploads/2015/08/logo1.svg" alt=""
+                                    title="" />
+                                <!--/ Image -->
+                            </a>
+                            <!--/ Partner image link -->
+                        </div>
+                        <!--/ Item #4 -->
+
+                        <!-- Item #5 -->
+                        <div class="ts-pt-partners__carousel-item">
+                            <!-- Partner image link -->
+                            <a class="ts-pt-partners__link" href="#" target="_self" title="">
+                                <!-- Image -->
+                                <img class="ts-pt-partners__img img-fluid"
+                                    src="https://demo.kallyas.net/wp-content/uploads/2015/08/logo2.svg" alt=""
+                                    title="" />
+                                <!--/ Image -->
+                            </a>
+                            <!--/ Partner image link -->
+                        </div>
+                        <!--/ Item #5 -->
+
+                        <!-- Item #6 -->
+                        <div class="ts-pt-partners__carousel-item">
+                            <!-- Partner image link -->
+                            <a class="ts-pt-partners__link" href="#" target="_self" title="">
+                                <!-- Image -->
+                                <img class="ts-pt-partners__img img-fluid"
+                                    src="https://demo.kallyas.net/wp-content/uploads/2015/08/logo3.svg" alt=""
+                                    title="" />
+                                <!--/ Image -->
+                            </a>
+                            <!--/ Partner image link -->
+                        </div>
+                        <!--/ Item #6 -->
+
+                        <!-- Item #7 -->
+                        <div class="ts-pt-partners__carousel-item">
+                            <!-- Partner image link -->
+                            <a class="ts-pt-partners__link" href="#" target="_self" title="">
+                                <!-- Image -->
+                                <img class="ts-pt-partners__img img-fluid"
+                                    src="https://demo.kallyas.net/wp-content/uploads/2015/08/logo4.svg" alt=""
+                                    title="" />
+                                <!--/ Image -->
+                            </a>
+                            <!--/ Partner image link -->
+                        </div>
+                        <!--/ Item #7 -->
+
+                        <!-- Item  #8-->
+                        <div class="ts-pt-partners__carousel-item">
+                            <!-- Partner image link -->
+                            <a class="ts-pt-partners__link" href="#" target="_self" title="">
+                                <!-- Image -->
+                                <img class="ts-pt-partners__img img-fluid"
+                                    src="https://demo.kallyas.net/wp-content/uploads/2015/08/logo5.svg" alt=""
+                                    title="" />
+                                <!--/ Image -->
+                            </a>
+                            <!--/ Partner image link -->
+                        </div>
+                        <!--/ Item #8 -->
+                    </div>
+                    <!--/ .ts-pt-partners__carousel js-slick -->
+                </div>
+                <!--/ Partners carousel wrapper -->
+            </div>
+            <!--/ Partners element - .ts-pt-partners -->
+        </div>
+        <!--/ col-md-12 col-sm-12 col-lg-5 -->
+    </section>
+
+
+
+
+    <!-- Info box + Testimonials carousel + Who we are + Flickr Feed section with background lightgray color and custom paddings -->
+    <section class="hg_section bg-lightgray pt-80 pb-70">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-6 mb-md-30">
+                    <!-- Info box classic style element -->
+                    <div class="info-text">
+                        <!-- Content -->
+                        <p>
+                            <strong>The code is very clear.</strong>
+                        </p>
+
+                        <p>
+                            There are many elements and endless ways of customization.
+                        </p>
+                        <!--/ Content -->
+                    </div>
+                    <!--/ Info box classic style element -->
+                </div>
+                <!--/ col-sm-12 col-md-6 col-lg-3 mb-md-30 -->
+
+                <div class="col-sm-12 col-md-6 col-lg-6 mb-md-30">
+                    <!-- Simple Testimonials carousel element -->
+                    <div class="testimonials-carousel">
+                        <!-- Title -->
+                        <h3 class="m_title">
+                            REVIEWS
+                        </h3>
+                        <!--/ Title -->
+
+                        <!-- Simple Testimonials carousel element wrapper -->
+                        <div class="testimonials_simple__carousel-wrapper">
+                            <div class="testimonial_simple__carousel js-slick" data-slick='{
+        									"arrows": false,
+        									"dots": false,
+        									"infinite": true,
+        									"autoplay": true,
+        									"speed": 300,
+        									"autoplaySpeed": 2000
+        								}'>
+
+                                <!-- Slide #1 -->
+                                <div class="testimonials_simple__carousel-item">
+                                    <blockquote>
+                                        “The best template on Themeforest, full documentation and a lot of pages and
+                                        very
+                                        good support!
+                                    </blockquote>
+
+                                    <!-- Author container -->
+                                    <div class="testimonial-author">
+                                        <!-- Author -->
+                                        <h5>
+                                            Sammy Jones, Designer
+                                        </h5>
+                                    </div>
+                                    <!--/ Author container -->
+                                </div>
+                                <!--/ Slide #1 -->
+
+                                <!-- Slide #2 -->
+                                <div class="testimonials_simple__carousel-item">
+                                    <blockquote>
+                                        “The code is very clear. There are many elements and endless ways of
+                                        customization.
+                                    </blockquote>
+
+                                    <!-- Author container -->
+                                    <div class="testimonial-author">
+                                        <!-- Author -->
+                                        <h5>
+                                            Andrew Kline, CTO
+                                        </h5>
+                                    </div>
+                                    <!--/ Author container -->
+                                </div>
+                                <!--/ Slide #2 -->
+                            </div>
+                            <!--/ .testimonial_simple__carousel sjs-slick -->
+                        </div>
+                        <!--/ Simple Testimonials carousel element wrapper -->
+                    </div>
+                    <!--/ Simple Testimonials carousel element -->
+                </div>
+                <!--/ col-sm-12 col-md-6 col-lg-3 mb-md-30 -->
+
+            </div>
+            <!--/ row -->
+        </div>
+        <!--/ container -->
+    </section>
+    <!--/ Info box + Testimonials carousel + Who we are + Flickr Feed section with background lightgray color and custom paddings -->
+
+
+
+
 
 
 
@@ -1337,7 +1952,8 @@
             <div class="row">
                 <div class="col-lg-7 padding-tb-15px">
                     <h2>Unbeatable Trucking and Transport Services</h2>
-                    <div class="text">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor
+                    <div class="text">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod
+                        tempor
                         incididunt ut labore et dolore magna aliqua</div>
                 </div>
                 <div class="col-lg-5">
@@ -1385,7 +2001,8 @@
                         <h4>25 years of experience in Logistics services</h4>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, et dolore magna aliqua. Ut enim ad
                         minim veniam, quis nostrud exercitation ullamco laboris
-                        <br> consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        <br> consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                        magna
                         aliqua ...
                     </div>
                     <a href="#" class="nile-bottom sm">Read More</a>
@@ -1411,7 +2028,8 @@
                     <div class="col-lg-7">
                         <div class="icon text-main-color"><i class="fa fa-commenting-o"></i></div>
                         <div class="h2">Testimonials</div>
-                        <div class="des">In quis luctus dolor. Sed ac libero arcu. Phasellus vulputate ultrices augue,
+                        <div class="des">In quis luctus dolor. Sed ac libero arcu. Phasellus vulputate ultrices
+                            augue,
                             eget feugiat lectus efficitur in. Nulla non pharetra justo. Nunc viverra consectetur
                             bibendum. </div>
                     </div>
@@ -1586,7 +2204,8 @@
                             <a href="#"><img src="assets/img/logo-dark-3.png" alt=""></a>
                         </div>
                         <div class="text margin-bottom-35px">
-                            Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt
+                            Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor
+                            incididunt
                             ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                         </div>
                         <a href="#" class="nile-bottom sm">Read More</a>
@@ -1640,7 +2259,8 @@
             <div class="container padding-tb-50px">
                 <div class="row">
                     <div class="col-lg-6">
-                        <div class="copy-right-text text-lg-left text-center sm-mb-15px">© 2018 Transportion & Logistics
+                        <div class="copy-right-text text-lg-left text-center sm-mb-15px">© 2018 Transportion &
+                            Logistics
                             Theme by <a href="#">Nile Theme</a> - All rights reserved </div>
                     </div>
                     <div class="col-lg-6">
