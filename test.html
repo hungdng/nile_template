@@ -1,0 +1,220 @@
+<!-- bootstrap -->
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+<!-- fontawesome  -->
+<link rel="stylesheet" href="assets/fonts/font-awesome/css/font-awesome.min.css">
+
+<script src="assets/js/jquery-3.2.1.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+
+
+<style>
+
+    .our-team {
+        padding: 0 0 40px;
+        background: #f9f9f9;
+        text-align: center;
+        overflow: hidden;
+        position: relative;
+        border-bottom: 5px solid #007bff;
+    }
+
+    .our-team:hover {
+        border-bottom: 5px solid #0056b2;
+    }
+
+    .our-team .pic {
+        display: inline-block;
+        width: 130px;
+        height: 130px;
+        margin-bottom: 50px;
+        z-index: 1;
+        position: relative;
+    }
+
+    .our-team .pic:before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background: #007bff;
+        position: absolute;
+        bottom: 135%;
+        right: 0;
+        left: 0;
+        opacity: 1;
+        transform: scale(3);
+        transition: all 0.3s linear 0s;
+    }
+
+    .our-team:hover .pic:before {
+        height: 100%;
+        background: #0056b2;
+    }
+
+    .our-team .pic:after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        transition: all 0.3s linear 0s;
+    }
+
+    .our-team:hover .pic:after {
+        background: #cd2122;
+    }
+
+    .our-team .pic img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        transform: scale(1);
+        transition: all 0.9s ease 0s;
+        box-shadow: 0 0 0 14px #f7f5ec;
+        transform: scale(0.7);
+        position: relative;
+        z-index: 2;
+    }
+
+    .our-team:hover .pic img {
+        box-shadow: 0 0 0 14px #f7f5ec;
+        transform: scale(0.7);
+    }
+
+    .our-team .team-content {
+        margin-bottom: 30px;
+    }
+
+    .our-team .title {
+        font-size: 22px;
+        font-weight: 700;
+        color: #4e5052;
+        letter-spacing: 1px;
+        text-transform: capitalize;
+        margin-bottom: 5px;
+    }
+
+    .our-team .post {
+        display: block;
+        font-size: 15px;
+        color: #4e5052;
+        text-transform: capitalize;
+    }
+
+    .our-team .social {
+        width: 100%;
+        padding-top: 10px;
+        margin: 0;
+        background: #0056b2;
+        position: absolute;
+        bottom: -100px;
+        left: 0;
+        transition: all 0.5s ease 0s;
+    }
+
+    .our-team:hover .social {
+        bottom: 0;
+    }
+
+    .our-team .social li {
+        display: inline-block;
+    }
+
+    .our-team .social li a {
+        display: block;
+        padding-top: 6px;
+        font-size: 15px;
+        color: #fff;
+        transition: all 0.3s ease 0s;
+    }
+
+    .our-team .social li a:hover {
+        color: #0056b2;
+        background: #f7f5ec;
+    }
+
+    @media only screen and (max-width: 990px) {
+        .our-team {
+            margin-bottom: 10px;
+        }
+    }
+</style>
+<div class="container">
+    <div class="row blog">
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="https://i.ibb.co/L8Pj1mg/o6EuTCT6.jpg">
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">Dana ROBINSON</h3>
+                            <span class="post">Marketing Consultant</span>
+                        </div>
+                        <ul class="social">
+                            <li>
+                                <a href="#" class="fa fab-envelope"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="https://i.ibb.co/L8Pj1mg/o6EuTCT6.jpg">
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">Dr. Bernard COVA</h3>
+                            <span class="post">Marketing - Auteur</span>
+                        </div>
+                        <ul class="social">
+                            <li>
+                                <a href="#" class="fa fa-envelope"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="https://i.ibb.co/L8Pj1mg/o6EuTCT6.jpg">
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">Dr. Francis Guilbert</h3>
+                            <span class="post">Docteur - Chercheur</span>
+                        </div>
+                        <ul class="social">
+                            <li>
+                                <a href="#" class="fa fa-envelope"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="https://i.ibb.co/L8Pj1mg/o6EuTCT6.jpg">
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">Dr. Francis Guilbert</h3>
+                            <span class="post">Docteur - Chercheur</span>
+                        </div>
+                        <ul class="social">
+                            <li>
+                                <a href="#" class="fa fa-envelope"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
